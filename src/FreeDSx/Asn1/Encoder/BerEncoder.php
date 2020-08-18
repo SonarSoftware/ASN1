@@ -201,6 +201,8 @@ class BerEncoder implements EncoderInterface
             $bytes = \chr($tag | $type->getTagNumber()).$bytes;
         }
 
+        print_r($bytes);
+
         return $bytes;
     }
 
